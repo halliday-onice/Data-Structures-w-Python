@@ -32,6 +32,16 @@ def Merge(vector, p, q, r):
       print("L", L)
       print("R", R)
 
+      i = j = 0
+      for k in range(len(vector)): 
+           if (L[i] <= R[j]):
+                 A[k] = L[i]
+                 i += 1
+           else:
+                  A[k] = R[j]
+                  j += 1
+      print("sorted vec", vector)
+
 
 
 
