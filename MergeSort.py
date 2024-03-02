@@ -3,18 +3,38 @@ import sys
 inf = sys.maxsize
 # trying to really learn the merge sort
 
-# p eh a pos mais esquerda
+#p eh a pos mais esquerda
 #q meio
 #r pos mais a direita
 L = []
 R = []
+vector = []
+
 #The .extend() method allows you to add more items to the end of a list
 def Merge(vector, p, q, r):
-      n1 = q - p + 1 #n1 eh o indice do vetor Left
-      n2 = r - p #n2 eh o indice do vetor Right
-      L = [None for i in range(n1 + 1)]
+      q = len(vector) // 2 # meio do vetor
+      p = vector[:q] #pos mais esquerda
+      r = vector[q:] # +1 pq estou excluindo a pos do meio 
+      print("p", p)
+      print("q", q)
+      print("r", r)
       
-      print(len(L))
+      #n2 eh o indice do vetor Right
+      n2 =  len(vector[q:])#n2 eh basicamente o ultimo elemento ate a metade
+      L = p.copy()
+      print("L", L)
+      R = r.copy()
+      print("R", R) 
+
+      L.insert(len(L),inf)
+      R.insert(len(R), inf)
+
+      print("L", L)
+      print("R", R)
+
+
+
+
             
 
 
