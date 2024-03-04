@@ -1,5 +1,7 @@
 import sys
 
+# Ao longo do script, estou seguindo a notacao do livro
+
 inf = sys.maxsize
 # trying to really learn the merge sort
 
@@ -11,6 +13,7 @@ R = []
 vector = []
 
 #The .extend() method allows you to add more items to the end of a list
+
 def Merge(vector, p, q, r):
       q = len(vector) // 2 # meio do vetor
       p = vector[:q] #pos mais esquerda
