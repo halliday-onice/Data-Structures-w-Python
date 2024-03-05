@@ -12,6 +12,19 @@ L = []
 R = []
 vector = []
 
+#lista, inicio e fim
+def MergeSort(vector, p, r):
+#Mergesort(vector,inicio, fim)
+      #condicao de parada:
+      #se ainda tiver um item
+      if (p - r > 1):
+            q = (q + r) // 2
+            MergeSort(vector,p,q) #mergesort(lista,inicio, meio)
+            MergeSort(vector,q,r) #mergesort(lista,meio, fim)
+            Merge(vector,p, q, r)
+
+
+
 #The .extend() method allows you to add more items to the end of a list
 
 def Merge(vector, p, q, r):
